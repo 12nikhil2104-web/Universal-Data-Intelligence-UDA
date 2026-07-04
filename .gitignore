@@ -1,0 +1,14 @@
+# Node/React
+node_modules/
+dist/
+.env
+
+# Python/FastAPI
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# OS generated files
+.DS_Store
