@@ -13,9 +13,11 @@ export default function DashboardPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/api/models')
-      .then(res => res.json())
-      .then(result => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('https://universal-data-intelligence-uda.onrender.com/api/models');
+        const result = await response.json();
+        
         // Explicitly parses strings into numbers to fix the missing dropdown choices bug
         const parsed = result.data.map((item, i) => {
           const row = { id: i, x: i };
@@ -31,11 +33,13 @@ export default function DashboardPage() {
         setDataset(parsed);
         setSchema({ all: result.columns, numeric: num });
         setLoading(false);
-      })
-      .catch(err => {
+      } catch (err) {
         console.error("Data pipeline processing error:", err);
         setLoading(false);
-      });
+      }
+    };
+
+    fetchData(); // Call the async function
   }, []);
 
   const addWidget = (type) => setWidgets([...widgets, { id: Date.now(), type }]);

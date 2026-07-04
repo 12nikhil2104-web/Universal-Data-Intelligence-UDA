@@ -34,7 +34,7 @@ export default function UploadPage() {
 
     try {
       // 2. Send the POST request to FastAPI
-      const response = await fetch("http://127.0.0.1:8000/api/upload", {
+      const response = await fetch("https://universal-data-intelligence-uda.onrender.com/api/upload", {
         method: "POST",
         body: formData,
       });
