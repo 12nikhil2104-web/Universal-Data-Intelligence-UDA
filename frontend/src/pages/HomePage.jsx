@@ -107,7 +107,7 @@ export default function HomePage() {
 
         <div className="absolute inset-0 z-10 flex flex-col items-center justify-center pointer-events-none">
           <div className="bg-white/50 backdrop-blur-sm px-4 py-1 rounded-full text-sm font-semibold text-blue-600 mb-6 border border-blue-100 shadow-sm">
-            v2.0  SAHU ji Performance Engine Now Live
+            v2.0  SAHU ji Performance Engine is Now Live
           </div>
           <h1 className="text-5xl md:text-7xl font-black text-slate-900 tracking-tighter mb-6 select-none text-center leading-tight">
             Universal Data <br /> Intelligence UDA
@@ -136,10 +136,10 @@ export default function HomePage() {
         <p className="text-sm font-semibold text-slate-400 uppercase tracking-widest mb-6">Trusted by data teams worldwide</p>
         <div className="flex flex-wrap gap-12 md:gap-24 opacity-40 grayscale">
           {/* Mock Logos - Replace with real SVGs later */}
-          <span className="text-xl font-black tracking-tighter font-serif">Acme Corp</span>
-          <span className="text-xl font-black tracking-tighter">GLOBEX</span>
-          <span className="text-xl font-black tracking-tighter italic">Soylent</span>
-          <span className="text-xl font-black tracking-tighter uppercase">Initech</span>
+          <span className="text-xl font-black tracking-tighter font-serif">TEAM7</span>
+          <span className="text-xl font-black tracking-tighter">Batch4</span>
+          <span className="text-xl font-black tracking-tighter italic">Sab tv</span>
+          <span className="text-xl font-black tracking-tighter uppercase">didi tera dewar diwana</span>
         </div>
       </div>
 
@@ -199,7 +199,7 @@ export default function HomePage() {
         >
           Upload Your First Dataset
         </button>
-        <p className="text-slate-500 mt-12 text-sm">© 2026 AI Benchmark Hub. All rights reserved.</p>
+        <p className="text-slate-500 mt-12 text-sm">© 2026 AI Benchmark Hub.  BY NIKHIL SAHU. All rights reserved.</p>
       </div>
 
     </div>
